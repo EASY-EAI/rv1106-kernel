@@ -1,0 +1,18 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * Copyright (c) 2024 Guangzhou EASY EAI Technology Co., Ltd.
+ */
+
+&i2c1 {
+	status = "okay";
+	clock-frequency = <100000>;
+
+	pcf85063: pcf85063@51 {
+		compatible = "nxp,pcf85063";
+		reg = <0x51>;
+	};
+};
+
+&rtc {
+	status = "disabled";
+};

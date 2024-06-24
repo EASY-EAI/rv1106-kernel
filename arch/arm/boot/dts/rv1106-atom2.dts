@@ -1,0 +1,20 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * Copyright (c) 2024 Guangzhou EASY EAI Technology Co., Ltd.
+ */
+
+/dts-v1/;
+
+#include "rv1106-core2.dtsi"
+#include "rv1106-atom-adckey.dtsi"
+#include "rv1106-atom-sdmmc.dtsi"
+#include "rv1106-atom2-sound.dtsi"
+#include "rv1106-atom2-powerkey.dtsi"
+#include "rv1106-atom-display.dtsi"
+#include "rv1106-atom2-csi-imx307.dtsi"
+#include "rv1106-atom2-gpio-wdt.dtsi"
+
+/ {
+	model = "EASY EAI ATOM DEMO Board";
+	compatible = "easy-eai,rv1106-atom", "rockchip,rv1106g3";
+};

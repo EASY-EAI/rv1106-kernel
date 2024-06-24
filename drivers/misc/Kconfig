@@ -203,6 +203,10 @@ config SGI_XP
 	  this feature will allow for direct communication between SSIs
 	  based on a network adapter and DMA messaging.
 
+config EASY_LDO
+	tristate "ldo supply controlled through GPIO-line"
+	depends on GPIOLIB
+
 config CS5535_MFGPT
 	tristate "CS5535/CS5536 Geode Multi-Function General Purpose Timer (MFGPT) support"
 	depends on MFD_CS5535

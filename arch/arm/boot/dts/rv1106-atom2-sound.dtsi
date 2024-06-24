@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * Copyright (c) 2024 Guangzhou EASY EAI Technology Co., Ltd.
+ */
+
+&acodec {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pa_ctl_pin>;
+	#sound-dai-cells = <0>;
+	pa-ctl-gpios = <&gpio3 RK_PD0 GPIO_ACTIVE_HIGH>;
+	status = "okay";
+};
+
+&pinctrl {
+	sound {
+		/omit-if-no-ref/
+		pa_ctl_pin: pa_ctl_pin {
+			rockchip,pins = <3 RK_PD0 RK_FUNC_GPIO &pcfg_pull_up>;
+		};
+	};
+};
